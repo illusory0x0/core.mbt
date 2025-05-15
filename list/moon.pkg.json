@@ -3,7 +3,9 @@
     "moonbitlang/core/builtin",
     "moonbitlang/core/array",
     "moonbitlang/core/quickcheck",
-    "moonbitlang/core/json"
+    "moonbitlang/core/json",
+    "moonbitlang/core/test",
+    "moonbitlang/core/bench"
   ],
   "test-import": [],
   "targets": {
