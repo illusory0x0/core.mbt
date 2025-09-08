@@ -25,14 +25,6 @@ test "to_string" {
 }
 
 ///|
-test "push_iter" {
-  let u = [1, 2, 3]
-  let v = [4, 5, 6]
-  u.push_iter(v.iter())
-  inspect(u, content="[1, 2, 3, 4, 5, 6]")
-}
-
-///|
 test "shuffle_in_place" {
   let arr : Array[Int] = [1, 2, 3, 4, 5, 6, 7]
   fn rand(upper : Int) -> Int {

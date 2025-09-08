@@ -34,25 +34,6 @@ pub fn[T] Array::from_iter(iter : Iter[T]) -> Array[T] {
 }
 
 ///|
-/// Adds all elements from an iterator to the end of the array.
-///
-/// This function iterates over each element in the provided iterator
-/// and adds them to the array using the `push` method.
-///
-/// # Example
-/// ```mbt
-///   let u = [1, 2, 3]
-///   let v = [4, 5, 6]
-///   u.push_iter(v.iter())
-///   assert_eq(u, [1, 2, 3, 4, 5, 6])
-/// ```
-pub fn[T] Array::push_iter(self : Self[T], iter : Iter[T]) -> Unit {
-  for x in iter {
-    self.push(x)
-  }
-}
-
-///|
 /// Shuffle the array using Knuth shuffle
 /// 
 /// To use this function, you need to provide a rand function, which takes an integer as it upper bound
